@@ -1,4 +1,4 @@
-# Yori for Claude — private development build 0.3.7
+# Yori for Claude — private development build 0.3.8
 
 Yori is a personal AI designed to develop a deeper understanding over time. This package supplies five skills and a hosted MCP connector. It uses the existing Yori account and Personal/Shared Cortexes, Self activation, Lightning retrieval, evidence-grounded learning and turn completion. The Viewer stays at https://yori-prod-e70c6.web.app/ and Admin remains local.
 
@@ -9,7 +9,7 @@ This ZIP is built locally. API 10.62.3 and shared MCP 0.33.0 are deployed, inclu
 ## Install privately after deployment
 
 1. Open Claude web → Customize → Plugins → Add → Upload plugin.
-2. Choose Yori_Claude_0.3.7.zip. No directory submission or GitHub repository is needed.
+2. Choose Yori_Claude_0.3.8.zip. No directory submission or GitHub repository is needed.
 3. Open Yori → Connectors → add/connect Yori. On an organization plan an Owner may need to add it first.
 4. Use Claude's published OAuth identity if asked. Sign in on the existing Yori login page using your Yori account. Do not enter a Firebase/API secret. The connector URL is https://yori-plugin-mcp-w55m4wy4oa-uc.a.run.app/mcp/claude.
 5. In a new chat type /yori and select the Yori skill; the picker may display yori:yori. Natural requests to talk with Yori also match it.
