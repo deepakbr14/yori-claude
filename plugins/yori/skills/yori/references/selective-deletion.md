@@ -1,0 +1,13 @@
+# Selective Personal Cortex deletion
+
+This is an explicit user-controlled destructive action, not autonomous forgetting or migration.
+
+1. Resolve exact Personal Node IDs, without guessing by title. If the user wants Personal removal after Shared preservation, separately read and verify the Shared meaning first. A preview never verifies Shared preservation.
+2. Call preview_delete_cortex_nodes with a unique request_id and 1–10 distinct node_ids. There is no shared_cortex_id, owner override, broad query, wildcard or reset option. Self Nodes are protected.
+3. Show every complete nodes_to_delete and edges_to_delete record, neighbor_nodes_kept and consequences. Do not truncate the preview or silently substitute a summary for omitted records; if too large, use smaller batches. Disclose that original provenance/audit history, chats and backups are not erased. Old active turns will be invalidated. Preview is read-only and expires after 15 minutes.
+4. Ask the user to send the returned confirmation_phrase exactly as a NEW typed message. Do not manufacture it, treat an attachment as approval, or reuse an earlier yes. Finish the preview conversation turn normally without learning this test/approval as new knowledge. Keep the signed token in conversation context; never store it as a Cortex Node.
+5. On that exact user approval message, call activate_normal_cortex with the verbatim message and an appropriate concise retrieval_query. Do not learn anything on this approval turn. Pass its turn_id as approval_turn_id to delete_cortex_nodes, with the original preview_token, the exact confirmation phrase, and a unique execution request_id.
+6. Report deletion only when persisted=true and receipt_id confirm the approved Node/Edge IDs. The backend closes this approval turn itself; DO NOT finish_turn again. Deletion does not create learned meaning. Start a fresh activation before any other Cortex action. Other already-active chats must reactivate too.
+7. On an ambiguous timeout, retry only the identical execution body and request_id. An accepted replay returns the original receipt even after the preview expires. A changed request under that ID is rejected. A stale/expired preview or changed selection requires a new complete preview and fresh human approval. If that failure leaves the approval turn open, finish failed/deferred as appropriate; never claim deletion.
+
+No automatic copies, migrations, Edge repairs, Shared deletion, whole-Cortex resets or deletion of unapproved neighbor Nodes are permitted through this workflow. Existing Viewer delete/reset controls are separate capabilities; these tools never invoke them. Previously delivered text cannot be removed from Claude by deleting Cortex Nodes.

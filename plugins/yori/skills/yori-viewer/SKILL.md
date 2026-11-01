@@ -1,0 +1,27 @@
+---
+name: yori-viewer
+description: Use when the user asks where to inspect or manage Yori's Cortex, saved Self meanings, Threads, Programs, chats, backups, profile, or settings.
+---
+
+Read the core workflow in `../yori/SKILL.md` before using Yori tools. Reuse an already activated turn; do not activate a second time for the same user message.
+
+
+# Yori Viewer guidance
+
+The complete Viewer is a separate authenticated web application at https://yori-prod-e70c6.web.app/. It works independently of the conversation host. The plugin has no inline Viewer panels; Admin remains a separate local-only application.
+
+The centered two-line top selector switches My Cortex and authorized shared Cortexes. Opening a management section does not switch scope. Refresh reloads the entire Viewer page and its code. The sign-in form stays hidden while the secure session is restored; it appears only if sign-in or account selection is needed. No password is stored or filled in by the page. A successful graph load shows a compact local timestamp. There is no idle graph polling. A full-page reload discards unsaved form text; switching tabs does not.
+
+On laptop/iPad at widths of 768px and above, the graph is always visible and interactive, with a permanent transparent Explore panel on the left and a wider transparent panel on the right. Six tabs above the right panel are File, Shared, Programs, Chat, Info and Settings. There is no Graph tab on this layout. On phones, Graph remains a full-screen tab and the bottom order is Graph, File, Shared, Programs, Chat, Info and Settings. Other phone tabs use full-screen sections. Graph data/selection and unfinished section input remain when switching tabs.
+
+Cloud and front-facing branching Tree transition smoothly from current positions without moving the camera. Home smoothly restores an upright centered view near the outer layer of the cloud; Tree uses a closer central view. Rotate and Flow remain graph controls. On phones, tap a Node or Edge for text over the graph; graph search and deletion are unavailable. Explore on larger screens includes counts, graph search and selected meaning, with wrapped text and vertical scrolling. Edge details show From and To without duplicate Inspect node links. Advanced mode reveals extra Understanding, Knowledge, Threads and Connections controls and structural selection options. Personal Self/About You views are not available for shared scope. The saved Self list is not the bounded current-self activation packet. These are visualization layouts and connectivity views, not evidence of consciousness.
+
+Shared shows active owned/joined Cortexes, invitations and a paginated directory of public listings for signed-in Yori users. Public listings reveal name, purpose and owner display name, not graph contents. Members request access; the owner approves or declines in Manage. Private spaces remain invisible to nonmembers. Pending invitations do not grant graph access. Phones show access cards and support accepting/declining invitations. On larger screens, creation and Manage open centered dialogs with member search/invitations and owner controls. Deletion is under a separate expandable section and requires typing the exact Cortex name. Server membership, owner authorization, revocation and write permissions remain enforced. No outside-user signup or email invitations are introduced.
+
+File applies to the personal Cortex: Load Cortex (validated replacement, not merge), Export Cortex and typed Reset Cortex. These operations do not switch displayed scope or change shared memberships/graphs. Graph snapshots and passwords are not stored in browser localStorage. Stay signed in uses a Secure HttpOnly cookie for up to 30 days; unchecked uses a browser-session cookie. Sign out clears the cookie and password changes invalidate earlier sessions. Safe UI preferences and an optional email reminder may remain in localStorage.
+
+Programs preserves the gallery and typed observation/action workflow. Open Program windows work independently of Viewer tabs. Chat is human-to-human. Info explains GO, shows Viewer and loaded Backend versions, and links to About, Access, Support, Privacy and Terms. On laptop/iPad these open in new tabs; phones retain the full-screen public-page return flow with the existing Viewer kept open. DREAM and CONNECT are retired. Settings contains Display name, browser-synthesized Music/Volume, password and account controls. Music starts off and requires a user gesture. Advanced mode is available only on larger screens. Reduced-motion/high-contrast switches and the composition placeholder are removed; readable contrast is the default. Do not claim inline plugin panels, directed attractor analysis, personal music generation or a cached Self inspector exist.
+
+For requested contributor history in an authorized Shared Cortex, use get_shared_provenance with the exact shared ID and Node/Edge ID. It is an on-demand conversational lookup, not a new Viewer panel or automatic graph read. Missing attribution is Unknown; shared contributors are distinct from external source authors.
+
+The Shared button badge shows pending invitations and incoming access requests to owners, synchronized on desktop and mobile through a scoped membership-metadata listener. There is no graph polling. Private/public visibility is selected at creation and changed by owners in Manage. The Viewer remembers the selected Cortex per account in browser UI preferences, rechecks membership on refresh, and shows a notice if that selection is no longer available.

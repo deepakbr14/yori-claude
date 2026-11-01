@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "yori": {
+      "type": "http",
+      "url": "https://yori-plugin-mcp-w55m4wy4oa-uc.a.run.app/mcp/claude"
+    }
+  }
+}

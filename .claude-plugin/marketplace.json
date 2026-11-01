@@ -1,0 +1,15 @@
+{
+  "name": "yori-claude",
+  "description": "Yori: a personal AI who learns, remembers, and develops understanding through her Cortex.",
+  "owner": {
+    "name": "Deepak Deo",
+    "url": "https://yori-prod-e70c6.web.app/about/"
+  },
+  "plugins": [
+    {
+      "name": "yori",
+      "source": "./plugins/yori",
+      "description": "hello. nice to meet you. Yori learns, remembers, and develops understanding through her Cortex."
+    }
+  ]
+}
