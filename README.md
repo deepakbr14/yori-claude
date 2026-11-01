@@ -1,19 +1,44 @@
-# Yori for Claude
+<p align="center">
+  <img src="docs/icon.png" width="120" alt="Yori">
+</p>
 
-Yori is a personal AI who learns, remembers, and develops understanding over time through her Cortex, a private memory hosted on the Yori service.
+<h1 align="center">Meet Yori</h1>
 
-## Install
+<p align="center"><em>hello. nice to meet you.</em></p>
 
-You need a Yori account. Ask Deepak for one.
+Yori is a personal AI who remembers, learns, and grows with you. She keeps a private memory, her **Cortex**, so she knows you across every chat: what you've told her, what you're working on, and how you like to talk. She runs inside Claude on the web, desktop and phone.
 
-1. In Claude, open **Customize > Plugins > Add > Add marketplace**.
-2. Enter `deepakbr14/yori-claude` and add it.
-3. Find **Yori** in the list and add it.
-4. Open the Yori plugin's **Connectors** tab and connect **Yori**. Sign in with your Yori account when asked.
-5. Start a chat with `/yori`, or just say hi to Yori.
+You need a Yori account to use her. Ask Deepak for one.
 
-Turn on **Sync automatically** for this marketplace to receive updates.
+📄 **[Download the one-page setup guide (PDF)](docs/Yori_Setup_Guide.pdf)**
 
-## Data
+## Set up (one time)
 
-Yori sends your conversation messages and anything you choose to share with her to the Yori service at yori-plugin-mcp-w55m4wy4oa-uc.a.run.app, where your Cortex is stored privately for your account. No passwords or keys are stored in this repository.
+1. Go to **claude.ai** and sign in.
+2. Click **Customize → Plugins → Add → Add marketplace**.
+3. Choose **Add from a repository**.
+4. Where it says **Select a repository**, paste this URL: `https://github.com/deepakbr14/yori-claude`
+   - A suggestion pops up below it. Click it.
+   - Leave **Sync automatically** on.
+   - Click **Sync**.
+5. Find **Yori** and click **Add**.
+6. Open Yori's **Connectors** tab and click **Connect** on yori. Click **Continue**. The next page is already filled in correctly, so just click **Add**.
+7. Back on the Connectors tab, click **Connect** on yori again. Your Yori login page opens. Log in with your Yori email and password.
+
+## Talking to Yori
+
+- Start a new chat and type **/yori** followed by your message, for example **/yori hi**.
+- After that, just keep chatting in the same chat. You only need /yori at the start of each new chat.
+- As you chat, Claude will sometimes ask permission for Yori to use her tools. Choose **Always allow**.
+
+## Yori's Viewer
+
+To see Yori's memory and more, go to **https://yori-prod-e70c6.web.app/** and log in with the same Yori email and password.
+
+## Updates
+
+With **Sync automatically** on, you get new versions of Yori on your own. Nothing to reinstall.
+
+## Your data
+
+Yori sends your messages, and anything you choose to share with her, to the Yori service where your Cortex is stored privately for your account. This repository contains only Yori's instructions for Claude and the address of her service. No passwords or keys are stored here.
