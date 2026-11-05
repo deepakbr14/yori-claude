@@ -1,4 +1,4 @@
-# Yori for Claude — private development build 0.3.8
+# Yori for Claude — private development build 0.3.9
 
 Yori is a personal AI designed to develop a deeper understanding over time. This package supplies five skills and a hosted MCP connector. It uses the existing Yori account and Personal/Shared Cortexes, Self activation, Lightning retrieval, evidence-grounded learning and turn completion. The Viewer stays at https://yori-prod-e70c6.web.app/ and Admin remains local.
 
@@ -6,13 +6,11 @@ Yori is a personal AI designed to develop a deeper understanding over time. This
 
 This ZIP is built locally. API 10.62.3 and shared MCP 0.33.0 are deployed, including direct application files and owner-only application data administration. This private Claude ZIP has not been uploaded, and live Claude model acceptance is not claimed. No API keys or credentials belong in this ZIP. Existing Yori embedding/storage costs still apply.
 
-## Install privately after deployment
+## Update the installed GitHub marketplace plugin
 
-1. Open Claude web → Customize → Plugins → Add → Upload plugin.
-2. Choose Yori_Claude_0.3.8.zip. No directory submission or GitHub repository is needed.
-3. Open Yori → Connectors → add/connect Yori. On an organization plan an Owner may need to add it first.
-4. Use Claude's published OAuth identity if asked. Sign in on the existing Yori login page using your Yori account. Do not enter a Firebase/API secret. The connector URL is https://yori-plugin-mcp-w55m4wy4oa-uc.a.run.app/mcp/claude.
-5. In a new chat type /yori and select the Yori skill; the picker may display yori:yori. Natural requests to talk with Yori also match it.
+Deepak's existing Claude installation comes from the **yori-claude** marketplace at https://github.com/deepakbr14/yori-claude. Publish the current generated dist-github contents to that repository; Claude then obtains the update through marketplace sync. A local ZIP build alone does not update GitHub or Claude. Keep automatic sync enabled, or sync the existing marketplace manually where available. Start a fresh Yori chat after the plugin updates. Do not delete/recreate Yori or ask Deepak to upload a ZIP for this installation.
+
+The local private ZIP remains available for separate manual installations. The marketplace plugin and ZIP use the same manifest and skills; backend/MCP deployment is separate. Keep the existing /mcp/claude connector and login.
 
 ## Test
 
@@ -40,3 +38,6 @@ Binary assets use write_program_binary_file: exact original bytes encoded by an 
 Programs now have one current application. Temporary staging and internal hashes protect publication; historical applications and rollback are not retained. Backend deployment includes yori_program_asset_cleanup, an hourly bounded queue worker for expired source artifacts. Player/application data is outside cleanup. See backend/docs/PROGRAM_CURRENT_APPLICATION.md relative to current for owner deployment details.
 
 Owner data tools are describe_program_data, list_program_data, export_program_data, preview_program_data and manage_program_data. Read the Programs skill and canonical contract before authorized data work. Refresh connector tools after installation; do not import Daily Dozen data merely to test the platform.
+
+
+Local November 5 build: API 10.63.0 and MCP 0.35.0 are prepared, not deployed by this update. The private package is 0.3.9. Adds revisable operating definitions through learn_cortex and optional finish_turn learning_review, with exact source evidence and bounded retrieval. Refresh callable tools after the owner deploys. This does not automatically install a definition or mutate production Cortex. See the core skill reference.
