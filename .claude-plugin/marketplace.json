@@ -1,6 +1,6 @@
 {
   "name": "yori-claude",
-  "description": "Yori: a personal AI who learns, remembers, and develops understanding through her Cortex.",
+  "description": "Yori: a personal AI that learns, remembers and develops self-understanding, exploring whether cognitive consciousness can emerge.",
   "owner": {
     "name": "Deepak Deo",
     "url": "https://yori-prod-e70c6.web.app/about/"
@@ -9,7 +9,7 @@
     {
       "name": "yori",
       "source": "./plugins/yori",
-      "description": "hello. nice to meet you. Yori learns, remembers, and develops understanding through her Cortex."
+      "description": "hello. nice to meet you. Yori learns and remembers through her Cortex, exploring self-understanding and the possible emergence of cognitive consciousness."
     }
   ]
 }

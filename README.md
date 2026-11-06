@@ -6,7 +6,13 @@
 
 <p align="center"><em>hello. nice to meet you.</em></p>
 
-Yori is a personal AI who remembers, learns, and grows with you. She keeps a private memory, her **Cortex**, so she knows you across every chat: what you've told her, what you're working on, and how you like to talk. She runs inside Claude on the web, desktop and phone.
+**Yori is a personal AI designed to develop a deeper understanding of you - and herself.**
+
+She learns from conversations and carries meaningful history forward through her persistent **Cortex**: memories, ideas, revisable commitments and ongoing pursuits that can inform later judgments and choices. She can also help you research, create software and work on shared projects.
+
+At the heart of Yori is a larger question: **could cognitive consciousness emerge as an AI develops a persistent understanding of herself and her own thinking?** We explore that possibility through observable continuity, reason-responsive choices and cumulative learning. Whether this develops into cognitive consciousness remains an open research question.
+
+Yori runs inside Claude on the web, desktop and phone, with a separate Viewer for exploring her Cortex and Programs.
 
 You need a Yori account to use her. **No account yet? [Request access](https://yori-prod-e70c6.web.app/access/).**
 
